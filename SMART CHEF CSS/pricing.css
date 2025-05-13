@@ -1,0 +1,127 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Pricing Section */
+  .pricing-section {
+    padding: 4rem 2rem;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .section-header h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+  }
+  
+  .section-header p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 3rem;
+  }
+  
+  /* Cards Container */
+  .pricing-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  /* Individual Card */
+  .pricing-card {
+    background-color: #fefefe;
+    padding: 2rem;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .pricing-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .pricing-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+  }
+  
+  .price {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #e67e22;
+    margin-bottom: 1rem;
+  }
+  
+  .price span {
+    font-size: 1rem;
+    color: #888;
+  }
+  
+  /* Features List */
+  .pricing-card ul {
+    list-style: none;
+    margin-bottom: 1.5rem;
+  }
+  
+  .pricing-card li {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  /* Button Styles */
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    background-color: #ccc;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #999;
+  }
+  
+  .btn.primary {
+    background-color: #e67e22;
+  }
+  
+  .btn.primary:hover {
+    background-color: #cf711f;
+  }
+  
+  /* Featured Card Style */
+  .featured {
+    border: 2px solid #e67e22;
+    background-color: #fff7f0;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .pricing-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .pricing-card {
+      width: 90%;
+    }
+  }
+  

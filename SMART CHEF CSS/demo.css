@@ -1,0 +1,116 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    color: #333;
+  }
+  
+  /* Demo Section */
+  .demo {
+    padding: 5rem 2rem;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .section-header h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+  }
+  
+  .section-header p {
+    font-size: 1.25rem;
+    color: #666;
+    margin-bottom: 3rem;
+  }
+  
+  .demo-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+  
+  .demo-form {
+    background-color: #e9ecef;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .demo-form label {
+    display: block;
+    font-size: 1.25rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+  }
+  
+  .demo-form input {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .demo-form button {
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .demo-form button:hover {
+    background-color: #cf711f;
+    transform: translateY(-4px);
+  }
+  
+  .demo-result {
+    background-color: #e9ecef;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .demo-result h3 {
+    font-size: 1.75rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+  }
+  
+  .demo-result p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .demo-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .demo-form {
+      width: 80%;
+    }
+  
+    .demo-result {
+      width: 80%;
+    }
+  }
+  

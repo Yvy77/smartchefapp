@@ -1,0 +1,101 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* About Section */
+  .about-section {
+    padding: 4rem 2rem;
+    background-color: #fff;
+  }
+  
+  .about-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .about-container h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+  }
+  
+  .about-container .intro {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 3rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* About Grid */
+  .about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .about-box {
+    background-color: #f0f0f0;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: left;
+  }
+  
+  .about-box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #e67e22;
+  }
+  
+  .about-box p {
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  /* Mission Section */
+  .mission {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 2rem;
+    border-top: 1px solid #ddd;
+  }
+  
+  .mission h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+  }
+  
+  .mission p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .about-container h1 {
+      font-size: 2rem;
+    }
+  
+    .about-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .mission h2 {
+      font-size: 1.5rem;
+    }
+  }
+  

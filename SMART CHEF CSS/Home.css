@@ -1,0 +1,137 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* General */
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    background-color: #fff;
+    line-height: 1.6;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eaeaea;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  nav {
+    position: relative;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .cta-nav {
+    background-color: #e67e22;
+    color: #fff !important;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+  }
+  
+  /* Toggle icon */
+  .menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+  
+  /* Home Section */
+  .home {
+    padding: 6rem 2rem;
+    text-align: center;
+    background: linear-gradient(to bottom right, #f8fff1, #ffffff);
+  }
+  
+  .home-heading {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+  }
+  
+  .home-subheading {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+  }
+  
+  .home-cta {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .cta-btn {
+    padding: 0.8rem 1.5rem;
+    background-color: #e67e22;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .cta-btn.secondary {
+    background-color: transparent;
+    color: #e67e22;
+    border: 2px solid #e67e22;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #fff;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 200px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 1rem;
+      border-radius: 8px;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    .home-heading {
+      font-size: 2rem;
+    }
+  
+    .home-subheading {
+      font-size: 1rem;
+    }
+  }
+  
